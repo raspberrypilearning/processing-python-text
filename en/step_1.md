@@ -31,7 +31,6 @@ text_size(size)
 
 Which accepts a number in pixels that represents the font size you want.
 
-
 For example, to create the word "Hello", in red 16 pixel high text, centred on a 400, 400 canvas, you would use:
 
 ```python
