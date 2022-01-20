@@ -1,59 +1,43 @@
-## Introduction
+Draw text using: `text('Text to display', x, y)`
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
+The text will be drawn using the `fill` value you have set before `text` is called.
 
-### What you will make
+```python
+text('Your text', 250, 50)
+```
 
---- no-print ---
-Add instructions for interacting with the embedded content here.
+The text will be positioned at the (x, y) coordinates given by the two numbers.
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
---- /no-print ---
+!['Your text' appears on a grid with the position (250, 50) marked at its bottom-left corner.](images/text_grid.png)
 
---- print-only ---
-![Complete project](images/showcase_static.png)
---- /print-only ---
+You can also adjust the text by using:
 
---- collapse ---
----
-title: What you will need
----
-### Hardware
+```python
+text_align(horizontal_position, vertical_position) 
+```
 
-+ A computer or tablet capable of running Scratch 3
+Which adjusts the position of the text inside the invisible box you create at the target coordinates. P5 includes special variables for each of the position you might want to use:
 
-### Software
+ - A `horizontal_position` of `LEFT` will align the text to the left of the text box
+ - A `horizontal_position` of `CENTER` will horizontally centre the text in the text box
+ - A `horizontal_position` of `RIGHT` will align the text to the right of the text box
+ - A `vertical_position` of `TOP` will align the text to the top of the text box
+ - A `vertical_position` of `CENTER` will align the text to the middle of the text box
+ - A `vertical_position` of `BOTTOM` will align the text to the bottom of the text box
 
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
+```python
+text_size(size)
+```
 
-### Downloads
+Which accepts a number in pixels that represents the font size you want.
 
-+ Download the project [starter file](http://rpf.io/p/en/projectName-go){:target="_blank"} if working offline
+For example, to create the word "Hello", in red 16 pixel high text, centred on a 400, 400 canvas, you would use:
 
---- /collapse ---
+```python
+fill(200, 0, 0)
+text_size(16)
+text_align(CENTER, CENTER)
+text('Hello', 200, 200)
+```
 
---- collapse ---
----
-title: What you will learn
----
-
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
-
---- /collapse ---
-
---- collapse ---
----
-title: Additional information for educators
----
-
-You can download the completed project [here](http://rpf.io/p/en/projectName-get){:target="_blank"}.
-
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/projectName/print){:target="_blank"}.
-
---- /collapse ---
+!['Hello' appears in red text, centred on a grid marked (200, 200).](images/all_features.png) 
