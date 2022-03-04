@@ -1,18 +1,18 @@
-Draw text using: `text('Text to display', x, y)`
+Σχεδίασε κείμενο χρησιμοποιώντας τη συνάρτηση: `text('Κείμενο προς εμφάνιση', x, y)`
 
-The text will be drawn using the `fill` value you have set before `text` is called.
+Το κείμενο θα σχεδιαστεί χρησιμοποιώντας την τιμή `fill` που έχεις ορίσει πριν καλέσεις το `text`.
 
 ```python
 
-text('Your text', 250, 50)
+text('Το κείμενό σου', 250, 50)
 
 ```
 
-The text will be positioned at the (x, y) coordinates given by the two numbers.
+Το κείμενο θα τοποθετηθεί στις συντεταγμένες (x, y) που δίνονται από τους δύο πρώτους αριθμούς.
 
-!['Your text' appears on a grid with the position (250, 50) marked at its bottom-left corner.](images/text_grid.png)
+![Το "κείμενό σου" εμφανίζεται σε ένα πλέγμα με τη θέση (250, 50) σημειωμένη στην κάτω αριστερή γωνία του.](images/text_grid.png)
 
-You can also adjust the text by using:
+Μπορείς επίσης να προσαρμόσεις το κείμενο χρησιμοποιώντας:
 
 ```python
 
@@ -20,14 +20,14 @@ text_align(horizontal_position, vertical_position)
 
 ```
 
-Which adjusts the position of the text inside the invisible box you create at the target coordinates. P5 includes special variables for each of the position you might want to use:
+Το οποίο προσαρμόζει τη θέση του κειμένου μέσα στο αόρατο πλαίσιο που δημιουργείς στις συντεταγμένες προορισμού. Η βιβλιοθήκη p5 περιλαμβάνει ειδικές μεταβλητές για κάθε θέση που μπορεί να θέλεις να χρησιμοποιήσεις:
 
- - A `horizontal_position` of `LEFT` will align the text to the left of the text box
- - A `horizontal_position` of `CENTER` will horizontally centre the text in the text box
- - A `horizontal_position` of `RIGHT` will align the text to the right of the text box
- - A `vertical_position` of `TOP` will align the text to the top of the text box
- - A `vertical_position` of `CENTER` will align the text to the middle of the text box
- - A `vertical_position` of `BOTTOM` will align the text to the bottom of the text box
+ - Μια `horizontal_position` του `LEFT` θα ευθυγραμμίσει το κείμενο στα αριστερά του πλαισίου κειμένου
+ - Μια `horizontal_position` του `CENTER` θα κεντράρει οριζόντια το κείμενο στο πλαίσιο κειμένου
+ - Μια `horizontal_position` του `RIGHT` θα ευθυγραμμίσει το κείμενο στα δεξιά του πλαισίου κειμένου
+ - Μια `vertical_position` του `TOP` θα ευθυγραμμίσει το κείμενο στην κορυφή του πλαισίου κειμένου
+ - Μια `vertical_position` του `CENTER` θα ευθυγραμμίσει το κείμενο στη μέση του πλαισίου κειμένου
+ - Μια `vertical_position` του `BOTTOM` θα ευθυγραμμίσει το κείμενο στο κάτω μέρος του πλαισίου κειμένου
 
 ```python
 
@@ -35,17 +35,17 @@ text_size(size)
 
 ```
 
-Which accepts a number in pixels that represents the font size you want.
+Το οποίο δέχεται έναν αριθμό σε εικονοστοιχεία που αντιπροσωπεύει το μέγεθος γραμματοσειράς που θέλεις.
 
-For example, to create the word "Hello", in red 16 pixel high text, centred on a 400, 400 canvas, you would use:
+Για παράδειγμα, για να δημιουργήσεις τη λέξη "Γεια", σε κόκκινο κείμενο ύψους 16 pixel, με κέντρο 400, 400, στον καμβά θα χρησιμοποιούσες:
 
 ```python
 
 fill(200, 0, 0)
 text_size(16)
 text_align(CENTER, CENTER)
-text('Hello', 200, 200)
+text('Γεια', 200, 200)
 
 ```
 
-!['Hello' appears in red text, centred on a grid marked (200, 200).](images/all_features.png) 
+![Το "Γεια" εμφανίζεται σε κόκκινο κείμενο, με κέντρο σε ένα πλέγμα με την ένδειξη (200, 200).](images/all_features.png) 
