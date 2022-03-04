@@ -1,51 +1,51 @@
-Draw text using: `text('Text to display', x, y)`
+Maak tekst met: `text('Tekst om weer te geven', x, y)`
 
-The text will be drawn using the `fill` value you have set before `text` is called.
-
-```python
-
-text('Your text', 250, 50)
-
-```
-
-The text will be positioned at the (x, y) coordinates given by the two numbers.
-
-!['Your text' appears on a grid with the position (250, 50) marked at its bottom-left corner.](images/text_grid.png)
-
-You can also adjust the text by using:
+De tekst wordt gemaakt met de `fill` waarde die je hebt ingesteld voordat `text` wordt aangeroepen.
 
 ```python
 
-text_align(horizontal_position, vertical_position) 
+text('Jouw tekst', 250, 50)
 
 ```
 
-Which adjusts the position of the text inside the invisible box you create at the target coordinates. P5 includes special variables for each of the position you might want to use:
+De tekst wordt gepositioneerd op de (x, y) coördinaten die door de twee getallen worden gegeven.
 
- - A `horizontal_position` of `LEFT` will align the text to the left of the text box
- - A `horizontal_position` of `CENTER` will horizontally centre the text in the text box
- - A `horizontal_position` of `RIGHT` will align the text to the right of the text box
- - A `vertical_position` of `TOP` will align the text to the top of the text box
- - A `vertical_position` of `CENTER` will align the text to the middle of the text box
- - A `vertical_position` of `BOTTOM` will align the text to the bottom of the text box
+!['Jouw tekst' verschijnt op een raster met de positie (250, 50) geplaatst in de linker benedenhoek.](images/text_grid.png)
+
+Je kunt de tekst ook aanpassen met:
 
 ```python
 
-text_size(size)
+text_align(horizontale_positie, verticale_positie) 
 
 ```
 
-Which accepts a number in pixels that represents the font size you want.
+Waarmee je de positie van de tekst aanpast binnen de onzichtbare rechthoek die je op de doelcoördinaten maakt. P5 bevat speciale variabelen voor elk van de posities die je mogelijk wilt gebruiken:
 
-For example, to create the word "Hello", in red 16 pixel high text, centred on a 400, 400 canvas, you would use:
+ - Een `horizontale_positie` van `LEFT` zal de tekst links in het tekstvak uitlijnen
+ - Een `horizontale_positie` van `CENTER` centreert de tekst horizontaal in het tekstvak
+ - Een `horizontale_positie` van `RIGHT` zal de tekst rechts in het tekstvak uitlijnen
+ - Een `verticale_positie` van `TOP` lijnt de tekst uit met de bovenkant van het tekstvak
+ - Een `verticale_positie` van `CENTER` zal de tekst uitlijnen in het midden van het tekstvak
+ - Een `verticale_positie` van `BOTTOM` lijnt de tekst uit met de onderkant van het tekstvak
+
+```python
+
+text_size(grootte)
+
+```
+
+Hiermee stel je een getal in pixels in voor de gewenste lettergrootte.
+
+Als je bijvoorbeeld het woord "Hallo" wilt maken in rode tekst van 16 pixels hoog, gecentreerd op een 400, 400 canvas, gebruik je:
 
 ```python
 
 fill(200, 0, 0)
 text_size(16)
 text_align(CENTER, CENTER)
-text('Hello', 200, 200)
+text('Hallo', 200, 200)
 
 ```
 
-!['Hello' appears in red text, centred on a grid marked (200, 200).](images/all_features.png) 
+!['Hallo' verschijnt in rode tekst, gecentreerd op een raster gemarkeerd (200, 200).](images/all_features.png) 
