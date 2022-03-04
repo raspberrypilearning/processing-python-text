@@ -1,18 +1,18 @@
-Draw text using: `text('Text to display', x, y)`
+テキストを描くにはこれを使います:  `text('表示するテキスト', x, y)`
 
-The text will be drawn using the `fill` value you have set before `text` is called.
+テキストは、 `text` が呼び出される前に設定した `fill` の値を使用して描かれます。
 
 ```python
 
-text('Your text', 250, 50)
+text('あなたのテキスト', 250, 50)
 
 ```
 
-The text will be positioned at the (x, y) coordinates given by the two numbers.
+テキストは、2つの数字で指定された(x, y)座標に配置されます。
 
-!['Your text' appears on a grid with the position (250, 50) marked at its bottom-left corner.](images/text_grid.png)
+![「あなたのテキスト」が、(250, 50)の位置を左下隅としたグリッドに表示されます。](images/text_grid.png)
 
-You can also adjust the text by using:
+次のようにしてテキストの位置を調整することもできます。
 
 ```python
 
@@ -20,14 +20,14 @@ text_align(horizontal_position, vertical_position)
 
 ```
 
-Which adjusts the position of the text inside the invisible box you create at the target coordinates. P5 includes special variables for each of the position you might want to use:
+これは、ターゲット座標に作成した見えないボックス内のテキストの位置を調整します。 P5には、あなたが使用することができる位置を示す特別な変数があります。
 
- - A `horizontal_position` of `LEFT` will align the text to the left of the text box
- - A `horizontal_position` of `CENTER` will horizontally centre the text in the text box
- - A `horizontal_position` of `RIGHT` will align the text to the right of the text box
- - A `vertical_position` of `TOP` will align the text to the top of the text box
- - A `vertical_position` of `CENTER` will align the text to the middle of the text box
- - A `vertical_position` of `BOTTOM` will align the text to the bottom of the text box
+ - `horizontal_position` に `LEFT` を使うと、テキストをテキストボックスの左側に寄せます
+ - `horizontal_position` に `CENTER` を使うと、テキストをテキストボックスの水平方向の中央に寄せます
+ - `horizontal_position` に `RIGHT` を使うと、テキストをテキストボックスの右側に寄せます
+ - `vertical_position` に `TOP` を使うと、テキストをテキストボックスの上側に寄せます
+ - `vertical_position` に `TOP` を使うと、テキストをテキストボックスの中央に寄せます
+ - `vertical_position` に `BOTTOM` を使うと、テキストをテキストボックスの下側に寄せます
 
 ```python
 
@@ -35,17 +35,17 @@ text_size(size)
 
 ```
 
-Which accepts a number in pixels that represents the font size you want.
+これは、希望のフォントサイズをピクセル単位で表した数値で指定するものです。
 
-For example, to create the word "Hello", in red 16 pixel high text, centred on a 400, 400 canvas, you would use:
+たとえば、400、400のキャンバスの中央に、高さ16ピクセルの赤いテキストで「こんにちは」という言葉を表示するには、次のようにします。
 
 ```python
 
 fill(200, 0, 0)
 text_size(16)
 text_align(CENTER, CENTER)
-text('Hello', 200, 200)
+text('こんにちは', 200, 200)
 
 ```
 
-!['Hello' appears in red text, centred on a grid marked (200, 200).](images/all_features.png) 
+![「こんにちは」は、(200, 200) に配置されたグリッドの中央に赤いテキストで表示されます。](images/all_features.png) 
