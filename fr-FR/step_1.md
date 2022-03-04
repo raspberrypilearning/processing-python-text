@@ -1,51 +1,51 @@
-Draw text using: `text('Text to display', x, y)`
+Dessiner du texte en utilisant : `text('Texte à afficher', x, y)`
 
-The text will be drawn using the `fill` value you have set before `text` is called.
-
-```python
-
-text('Your text', 250, 50)
-
-```
-
-The text will be positioned at the (x, y) coordinates given by the two numbers.
-
-!['Your text' appears on a grid with the position (250, 50) marked at its bottom-left corner.](images/text_grid.png)
-
-You can also adjust the text by using:
+Le texte sera dessiné en utilisant la valeur `fill` que tu as définie avant que `text` ne soit appelé.
 
 ```python
 
-text_align(horizontal_position, vertical_position) 
+text('Ton texte', 250, 50)
 
 ```
 
-Which adjusts the position of the text inside the invisible box you create at the target coordinates. P5 includes special variables for each of the position you might want to use:
+Le texte sera positionné aux coordonnées (x, y) données par les deux nombres.
 
- - A `horizontal_position` of `LEFT` will align the text to the left of the text box
- - A `horizontal_position` of `CENTER` will horizontally centre the text in the text box
- - A `horizontal_position` of `RIGHT` will align the text to the right of the text box
- - A `vertical_position` of `TOP` will align the text to the top of the text box
- - A `vertical_position` of `CENTER` will align the text to the middle of the text box
- - A `vertical_position` of `BOTTOM` will align the text to the bottom of the text box
+![« Ton texte » apparaît sur une grille avec la position (250, 50) marquée dans son coin inférieur gauche.](images/text_grid.png)
+
+Tu peux également ajuster le texte en utilisant :
 
 ```python
 
-text_size(size)
+text_align(position_horizontale, position_verticale) 
 
 ```
 
-Which accepts a number in pixels that represents the font size you want.
+Ce qui ajuste la position du texte à l'intérieur de la boîte invisible que tu crées aux coordonnées cibles. P5 inclut des variables spéciales pour chacune des positions que tu pourrais vouloir utiliser :
 
-For example, to create the word "Hello", in red 16 pixel high text, centred on a 400, 400 canvas, you would use:
+ - Une `position_horizontale` à `LEFT` alignera le texte à gauche de la zone de texte
+ - Une `position_horizontale` à `CENTER` centrera horizontalement le texte dans la zone de texte
+ - Une `position_horizontale` à `RIGHT` alignera le texte à droite de la zone de texte
+ - Une `position_verticale` à `TOP` alignera le texte en haut de la zone de texte
+ - Une `position_verticale` à `CENTER` alignera le texte au milieu de la zone de texte
+ - Une `position_verticale` à `BOTTOM` alignera le texte au bas de la zone de texte
+
+```python
+
+text_size(taille)
+
+```
+
+Qui accepte un nombre en pixels qui représente la taille de police souhaitée.
+
+Par exemple, pour créer le mot « Bonjour », en texte rouge de 16 pixels de haut, centré sur un canevas 400, 400, tu utiliserais :
 
 ```python
 
 fill(200, 0, 0)
 text_size(16)
 text_align(CENTER, CENTER)
-text('Hello', 200, 200)
+text('Bonjour', 200, 200)
 
 ```
 
-!['Hello' appears in red text, centred on a grid marked (200, 200).](images/all_features.png) 
+![« Bonjour » apparaît en texte rouge, centré sur une grille marquée (200, 200).](images/all_features.png) 
