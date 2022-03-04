@@ -1,18 +1,18 @@
-Draw text using: `text('Text to display', x, y)`
+ارسم نصًا باستخدام: `text('Text to display، x، y)`
 
-The text will be drawn using the `fill` value you have set before `text` is called.
+سيتم رسم النص باستخدام القيمة `fill` التي قمت بتعيينها قبل استدعاء `text`.
 
 ```python
 
-text('Your text', 250, 50)
+text("Your text"، 250، 50)
 
 ```
 
-The text will be positioned at the (x, y) coordinates given by the two numbers.
+سيتم وضع النص عند إحداثيات (y ، x) المعطاة من الرقمين.
 
-!['Your text' appears on a grid with the position (250, 50) marked at its bottom-left corner.](images/text_grid.png)
+![يظهر "نصك" على شبكة مؤشر في موضع (250 ، 50) في الزاوية اليسرى السفلية.](images/text_grid.png)
 
-You can also adjust the text by using:
+يمكنك أيضًا تعديل النص باستخدام:
 
 ```python
 
@@ -20,14 +20,14 @@ text_align(horizontal_position, vertical_position)
 
 ```
 
-Which adjusts the position of the text inside the invisible box you create at the target coordinates. P5 includes special variables for each of the position you might want to use:
+الذي يعدل موضع النص داخل المربع غير المرئي الذي تقوم بإنشائه عند الإحداثيات الهدف. يتضمن P5 متغيرات خاصة لكل موضع قد ترغب في استخدامه:
 
- - A `horizontal_position` of `LEFT` will align the text to the left of the text box
- - A `horizontal_position` of `CENTER` will horizontally centre the text in the text box
- - A `horizontal_position` of `RIGHT` will align the text to the right of the text box
- - A `vertical_position` of `TOP` will align the text to the top of the text box
- - A `vertical_position` of `CENTER` will align the text to the middle of the text box
- - A `vertical_position` of `BOTTOM` will align the text to the bottom of the text box
+ - `horizontal_position` of `LEFT` سيحاذي النص إلى يسار مربع النص
+ - `horizontal_position` of `CENTER` سيؤدي إلى توسيط النص أفقيًا في مربع النص
+ - `horizontal_position` of `RIGHT` سيحاذي النص إلى يمين مربع النص
+ - `vertical_position` of `TOP` سيحاذي النص إلى أعلى مربع النص
+ - `vertical_position` of `CENTER` سيحاذي النص إلى منتصف مربع النص
+ - `vertical_position` of `BOTTOM` سيحاذي النص إلى أسفل مربع النص
 
 ```python
 
@@ -35,9 +35,9 @@ text_size(size)
 
 ```
 
-Which accepts a number in pixels that represents the font size you want.
+الذي يقبل عددًا بالبكسل يمثل حجم الخط الذي تريده.
 
-For example, to create the word "Hello", in red 16 pixel high text, centred on a 400, 400 canvas, you would use:
+على سبيل المثال ، لإنشاء كلمة "مرحبًا" ، بنص أحمر يبلغ ارتفاعه 16 بكسل ، يتم توسيطه على لوحة 400 ، 400 ، يمكنك استخدام:
 
 ```python
 
@@ -48,4 +48,4 @@ text('Hello', 200, 200)
 
 ```
 
-!['Hello' appears in red text, centred on a grid marked (200, 200).](images/all_features.png) 
+![تظهر كلمة "مرحبًا" بخط أحمر في وسط شبكة مؤشرة (200 ، 200).](images/all_features.png) 
