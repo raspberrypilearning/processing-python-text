@@ -4,7 +4,7 @@
 
 ```python
 
-text("Your text"، 250، 50)
+text('نصك', 250, 50)
 
 ```
 
