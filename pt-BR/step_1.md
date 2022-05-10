@@ -1,51 +1,51 @@
-Draw text using: `text('Text to display', x, y)`
+Crie texto usando: `text('Texto a ser exibido', x, y)`
 
-The text will be drawn using the `fill` value you have set before `text` is called.
-
-```python
-
-text('Your text', 250, 50)
-
-```
-
-The text will be positioned at the (x, y) coordinates given by the two numbers.
-
-!['Your text' appears on a grid with the position (250, 50) marked at its bottom-left corner.](images/text_grid.png)
-
-You can also adjust the text by using:
+O texto será criado usando o valor `fill` que você definiu antes do `text` ser chamado.
 
 ```python
 
-text_align(horizontal_position, vertical_position) 
+text('Seu texto', 250, 50)
 
 ```
 
-Which adjusts the position of the text inside the invisible box you create at the target coordinates. P5 includes special variables for each of the position you might want to use:
+O texto será posicionado nas coordenadas (x, y) dadas pelos dois números.
 
- - A `horizontal_position` of `LEFT` will align the text to the left of the text box
- - A `horizontal_position` of `CENTER` will horizontally centre the text in the text box
- - A `horizontal_position` of `RIGHT` will align the text to the right of the text box
- - A `vertical_position` of `TOP` will align the text to the top of the text box
- - A `vertical_position` of `CENTER` will align the text to the middle of the text box
- - A `vertical_position` of `BOTTOM` will align the text to the bottom of the text box
+!['Seu texto' aparece em uma grade com a posição (250, 50) marcada no canto inferior esquerdo.](images/text_grid.png)
+
+Você também pode ajustar o texto usando:
 
 ```python
 
-text_size(size)
+text_align(posição_horizontal, posição_vertical) 
 
 ```
 
-Which accepts a number in pixels that represents the font size you want.
+Que ajusta a posição do texto dentro da caixa invisível que você cria nas coordenadas escolhidas. P5 inclui variáveis especiais para cada uma das posições que você pode querer usar:
 
-For example, to create the word "Hello", in red 16 pixel high text, centred on a 400, 400 canvas, you would use:
+ - Uma `posição_horizontal` `LEFT` alinhará o texto à esquerda da caixa de texto
+ - Uma `posição_horizontal` `CENTER` alinhará o texto ao centro horizontal da caixa de texto
+ - Uma `posição_horizontal` `RIGHT` alinhará o texto à direita da caixa de texto
+ - Uma `posição_vertical` `TOP` alinhará o texto ao topo da caixa de texto
+ - Uma `posição_vertical` `CENTER` alinhará o texto no meio da caixa de texto
+ - Uma `posição_vertical` `BOTTOM` alinhará o texto à parte inferior da caixa de texto
+
+```python
+
+text_size(tamanho)
+
+```
+
+Que aceita um número em pixels que representa o tamanho da fonte que você deseja.
+
+Por exemplo, para criar a palavra "Olá", em vermelho, com 16 pixels de altura e centralizado em uma tela de 400 x 400, você usaria:
 
 ```python
 
 fill(200, 0, 0)
 text_size(16)
 text_align(CENTER, CENTER)
-text('Hello', 200, 200)
+text('Olá', 200, 200)
 
 ```
 
-!['Hello' appears in red text, centred on a grid marked (200, 200).](images/all_features.png) 
+!['Olá' aparece em texto vermelho, centralizado em uma grade marcada (200, 200).](images/all_features.png) 
