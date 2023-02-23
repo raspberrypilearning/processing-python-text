@@ -1,18 +1,18 @@
-Draw text using: `text('Text to display', x, y)`
+Виведення тексту за допомогою: `text('Текст для виведення', x, y)`
 
-The text will be drawn using the `fill` value you have set before `text` is called.
+Текст буде створений з використанням значень `fill`, які були визначені тобою раніше, перед тим, як буде виконана функція `text`.
 
 ```python
 
-text('Your text', 250, 50)
+text('Твій текст', 250, 50)
 
 ```
 
-The text will be positioned at the (x, y) coordinates given by the two numbers.
+Текст буде розміщено на координатах (x, y), які задаються двома числами.
 
-!['Your text' appears on a grid with the position (250, 50) marked at its bottom-left corner.](images/text_grid.png)
+!["Твій текст" відображається на координатній сітці на позиції (250, 50) у лівому нижньому куті сітки.](images/text_grid.png)
 
-You can also adjust the text by using:
+Ти також можеш визначити позицію тексту за допомогою:
 
 ```python
 
@@ -20,14 +20,14 @@ text_align(horizontal_position, vertical_position)
 
 ```
 
-Which adjusts the position of the text inside the invisible box you create at the target coordinates. P5 includes special variables for each of the position you might want to use:
+Цей код встановлює положення тексту всередині створюваного тобою невидимого поля по встановленим координатам. P5 має спеціальні змінні для кожної позиції, яку ти можеш використовувати:
 
- - A `horizontal_position` of `LEFT` will align the text to the left of the text box
- - A `horizontal_position` of `CENTER` will horizontally centre the text in the text box
- - A `horizontal_position` of `RIGHT` will align the text to the right of the text box
- - A `vertical_position` of `TOP` will align the text to the top of the text box
- - A `vertical_position` of `CENTER` will align the text to the middle of the text box
- - A `vertical_position` of `BOTTOM` will align the text to the bottom of the text box
+ - `horizontal_position` + `LEFT` вирівняє текст по лівому краю текстового поля
+ - `horizontal_position` + `CENTER` вирівняє текст у текстовому полі по горизонталі
+ - `horizontal_position` + `RIGHT` вирівняє текст по правому краю текстового поля
+ - `vertical_position` + `TOP` вирівняє текст по верхньому краю текстового поля
+ - `vertical_position` + `CENTER` вирівняє текст по центру текстового поля
+ - `vertical_position` + `BOTTOM` вирівняє текст по нижньому краю текстового поля
 
 ```python
 
@@ -35,17 +35,17 @@ text_size(size)
 
 ```
 
-Which accepts a number in pixels that represents the font size you want.
+Цей код приймає значення в пікселях, яке відображає розмір шрифту, який ти хочеш отримати.
 
-For example, to create the word "Hello", in red 16 pixel high text, centred on a 400, 400 canvas, you would use:
+Наприклад, щоб створити слово "Привіт", потрібно використати червоний текст висотою 16 пікселів, розміщений по центру полотна розміром 400 на 400 пікселів:
 
 ```python
 
 fill(200, 0, 0)
 text_size(16)
 text_align(CENTER, CENTER)
-text('Hello', 200, 200)
+text('Привіт', 200, 200)
 
 ```
 
-!['Hello' appears in red text, centred on a grid marked (200, 200).](images/all_features.png) 
+!['Привіт' відображається червоним текстом та знаходиться по центру сітки з розміткою (200, 200).](images/all_features.png) 
