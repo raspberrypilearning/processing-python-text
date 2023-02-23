@@ -1,43 +1,43 @@
-Draw text using: `text('Text to display', x, y)`
+Narysuj tekst używając: `text('Tekst do wyświetlenia', x, y)`
 
-The text will be drawn using the `fill` value you have set before `text` is called.
-
-```python
-
-text('Your text', 250, 50)
-
-```
-
-The text will be positioned at the (x, y) coordinates given by the two numbers.
-
-!['Your text' appears on a grid with the position (250, 50) marked at its bottom-left corner.](images/text_grid.png)
-
-You can also adjust the text by using:
+Tekst zostanie narysowany przy użyciu wartości `wypełnienia` ustawionej przed wywołaniem `tekstu`.
 
 ```python
 
-text_align(horizontal_position, vertical_position) 
+text('Twój tekst', 250, 50)
 
 ```
 
-Which adjusts the position of the text inside the invisible box you create at the target coordinates. P5 includes special variables for each of the position you might want to use:
+Tekst zostanie umieszczony we współrzędnych (x, y) przez podanie dwóch liczb.
 
- - A `horizontal_position` of `LEFT` will align the text to the left of the text box
- - A `horizontal_position` of `CENTER` will horizontally centre the text in the text box
- - A `horizontal_position` of `RIGHT` will align the text to the right of the text box
- - A `vertical_position` of `TOP` will align the text to the top of the text box
- - A `vertical_position` of `CENTER` will align the text to the middle of the text box
- - A `vertical_position` of `BOTTOM` will align the text to the bottom of the text box
+!['Twój tekst' pojawia się na siatce z pozycją (250, 50) zaznaczoną w lewym dolnym rogu.](images/text_grid.png)
+
+Możesz również dostosować tekst, używając:
 
 ```python
 
-text_size(size)
+text_align(położenie_poziome, położenie_pionowe) 
 
 ```
 
-Which accepts a number in pixels that represents the font size you want.
+Który dostosowuje pozycję tekstu w niewidocznym polu, które tworzysz na docelowych współrzędnych. P5 zawiera specjalne zmienne dla każdej pozycji, której możesz chcieć użyć:
 
-For example, to create the word "Hello", in red 16 pixel high text, centred on a 400, 400 canvas, you would use:
+ - `horizontal_position` z `LEFT` spowoduje wyrównanie tekstu do lewej strony pola tekstowego
+ - `horizontal_position` z `CENTER` spowoduje wyśrodkowanie tekstu w polu tekstowym w poziomie
+ - `horizontal_position` z `RIGHT` spowoduje wyrównanie tekstu do prawej strony pola tekstowego
+ - `vertical_position` z `TOP` spowoduje wyrównanie tekstu do górnej części pola tekstowego
+ - `vertical_position` z `CENTER` spowoduje wyrównanie tekstu do środka pola tekstowego
+ - `vertical_position` z `BOTTOM` spowoduje wyrównanie tekstu do dołu pola tekstowego
+
+```python
+
+text_size(rozmiar)
+
+```
+
+Który akceptuje liczbę w pikselach, która reprezentuje żądany rozmiar czcionki.
+
+Na przykład, aby utworzyć słowo „Hello” w czerwonym tekście o wysokości 16 pikseli, wyśrodkowane na płótnie 400, 400, użyjesz:
 
 ```python
 
@@ -48,4 +48,4 @@ text('Hello', 200, 200)
 
 ```
 
-!['Hello' appears in red text, centred on a grid marked (200, 200).](images/all_features.png) 
+!['Hello' pojawia się na czerwono, wyśrodkowany na siatce oznaczonej (200, 200).](images/all_features.png) 
