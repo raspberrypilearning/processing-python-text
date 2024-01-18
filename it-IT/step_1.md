@@ -1,51 +1,51 @@
-Draw text using: `text('Text to display', x, y)`
+Disegna il testo utilizzando: `text('Testo da visualizzare', x, y)`
 
-The text will be drawn using the `fill` value you have set before `text` is called.
-
-```python
-
-text('Your text', 250, 50)
-
-```
-
-The text will be positioned at the (x, y) coordinates given by the two numbers.
-
-!['Your text' appears on a grid with the position (250, 50) marked at its bottom-left corner.](images/text_grid.png)
-
-You can also adjust the text by using:
+Il testo verrà disegnato utilizzando il valore `fill` impostato prima che venga chiamato `text`.
 
 ```python
 
-text_align(horizontal_position, vertical_position) 
+text('Il tuo testo', 250, 50)
 
 ```
 
-Which adjusts the position of the text inside the invisible box you create at the target coordinates. P5 includes special variables for each of the position you might want to use:
+Il testo verrà posizionato alle coordinate (x, y) date dai due numeri.
 
- - A `horizontal_position` of `LEFT` will align the text to the left of the text box
- - A `horizontal_position` of `CENTER` will horizontally centre the text in the text box
- - A `horizontal_position` of `RIGHT` will align the text to the right of the text box
- - A `vertical_position` of `TOP` will align the text to the top of the text box
- - A `vertical_position` of `CENTER` will align the text to the middle of the text box
- - A `vertical_position` of `BOTTOM` will align the text to the bottom of the text box
+!['Il tuo testo' viene visualizzato su una griglia con la posizione (250, 50) contrassegnata nell'angolo in basso a sinistra.](images/text_grid.png)
+
+Puoi anche modificare il testo utilizzando:
 
 ```python
 
-text_size(size)
+text_align(posizione_orizzontale, posizione_verticale) 
 
 ```
 
-Which accepts a number in pixels that represents the font size you want.
+Che regola la posizione del testo all'interno della casella invisibile creata nelle coordinate di destinazione. P5 include variabili speciali per ciascuna posizione che potresti voler utilizzare:
 
-For example, to create the word "Hello", in red 16 pixel high text, centred on a 400, 400 canvas, you would use:
+ - Imposta `posizione_orizzonatale` a `LEFT` per allineare il testo a sinistra della casella di testo
+ - Imposta `posizione_orizzonatale` a `CENTER` per allineare il testo al centro della casella di testo
+ - Imposta `posizione_orizzonatale` a `RIGHT` per allineare il testo a destra della casella di testo
+ - Imposta `posizione_verticale` a `TOP` per allineare il testo alla parte superiore della casella di testo
+ - Imposta `posizione_verticale` a `CENTER` per allineare il testo nel mezzo della casella di testo
+ - Imposta `posizione_verticale` a `BOTTOM` per allineare il testo alla parte inferiore della casella di testo
+
+```python
+
+text_size(dimensione)
+
+```
+
+Che accetta un numero in pixel che rappresenta la dimensione del carattere desiderata.
+
+Ad esempio, per creare la parola "Ciao", con testo rosso alto 16 pixel, centrato su una tela 400x400, dovresti utilizzare:
 
 ```python
 
 fill(200, 0, 0)
 text_size(16)
 text_align(CENTER, CENTER)
-text('Hello', 200, 200)
+text('Ciao', 200, 200)
 
 ```
 
-!['Hello' appears in red text, centred on a grid marked (200, 200).](images/all_features.png) 
+!["Ciao" appare in testo rosso, centrato su una griglia contrassegnata (200, 200).](images/all_features.png) 
