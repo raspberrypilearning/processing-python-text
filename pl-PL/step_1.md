@@ -22,12 +22,12 @@ text_align(położenie_poziome, położenie_pionowe)
 
 Który dostosowuje pozycję tekstu w niewidocznym polu, które tworzysz na docelowych współrzędnych. P5 zawiera specjalne zmienne dla każdej pozycji, której możesz chcieć użyć:
 
- - `horizontal_position` z `LEFT` spowoduje wyrównanie tekstu do lewej strony pola tekstowego
+ - A `horizontal_position` of `LEFT` will align the text to the left of the text box
  - `horizontal_position` z `CENTER` spowoduje wyśrodkowanie tekstu w polu tekstowym w poziomie
- - `horizontal_position` z `RIGHT` spowoduje wyrównanie tekstu do prawej strony pola tekstowego
+ - A `horizontal_position` of `RIGHT` will align the text to the right of the text box
  - `vertical_position` z `TOP` spowoduje wyrównanie tekstu do górnej części pola tekstowego
- - `vertical_position` z `CENTER` spowoduje wyrównanie tekstu do środka pola tekstowego
- - `vertical_position` z `BOTTOM` spowoduje wyrównanie tekstu do dołu pola tekstowego
+ - A `vertical_position` of `CENTER` will align the text to the middle of the text box
+ - `polozenie_pionowe` z `BOTTOM` spowoduje wyrównanie tekstu do dołu pola tekstowego
 
 ```python
 
