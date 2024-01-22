@@ -16,18 +16,18 @@ Możesz również dostosować tekst, używając:
 
 ```python
 
-text_align(położenie_poziome, położenie_pionowe) 
+text_align(polozenie_poziome, polozenie_pionowe) 
 
 ```
 
 Który dostosowuje pozycję tekstu w niewidocznym polu, które tworzysz na docelowych współrzędnych. P5 zawiera specjalne zmienne dla każdej pozycji, której możesz chcieć użyć:
 
- - `horizontal_position` z `LEFT` spowoduje wyrównanie tekstu do lewej strony pola tekstowego
- - `horizontal_position` z `CENTER` spowoduje wyśrodkowanie tekstu w polu tekstowym w poziomie
- - `horizontal_position` z `RIGHT` spowoduje wyrównanie tekstu do prawej strony pola tekstowego
- - `vertical_position` z `TOP` spowoduje wyrównanie tekstu do górnej części pola tekstowego
- - `vertical_position` z `CENTER` spowoduje wyrównanie tekstu do środka pola tekstowego
- - `vertical_position` z `BOTTOM` spowoduje wyrównanie tekstu do dołu pola tekstowego
+ - `polozenie_poziome` z `LEFT` spowoduje wyrównanie tekstu do lewej strony pola tekstowego
+ - `polozenie_poziome` z `CENTER` spowoduje wyśrodkowanie tekstu w polu tekstowym w poziomie
+ - `polozenie_poziome` z `RIGHT` spowoduje wyrównanie tekstu do prawej strony pola tekstowego
+ - `polozenie_pionowe` z `TOP` spowoduje wyrównanie tekstu do górnej części pola tekstowego
+ - `polozenie_pionowe` z `CENTER` spowoduje wyrównanie tekstu do środka pola tekstowego
+ - `polozenie_pionowe` z `BOTTOM` spowoduje wyrównanie tekstu do dołu pola tekstowego
 
 ```python
 
