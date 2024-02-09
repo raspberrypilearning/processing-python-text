@@ -22,12 +22,12 @@ text_align(posizione_orizzontale, posizione_verticale)
 
 Che regola la posizione del testo all'interno della casella invisibile creata nelle coordinate di destinazione. P5 include variabili speciali per ciascuna posizione che potresti voler utilizzare:
 
- - Imposta `posizione_orizzonatale` a `LEFT` per allineare il testo a sinistra della casella di testo
- - Imposta `posizione_orizzonatale` a `CENTER` per allineare il testo al centro della casella di testo
- - Imposta `posizione_orizzonatale` a `RIGHT` per allineare il testo a destra della casella di testo
- - Imposta `posizione_verticale` a `TOP` per allineare il testo alla parte superiore della casella di testo
- - Imposta `posizione_verticale` a `CENTER` per allineare il testo nel mezzo della casella di testo
- - Imposta `posizione_verticale` a `BOTTOM` per allineare il testo alla parte inferiore della casella di testo
+ - Imposta `posizione_orizzontale` a `LEFT` per allineare il testo a sinistra della casella
+ - Imposta `posizione_orizzontale` a `CENTER` per allinearlo al centro della casella
+ - Imposta `posizione_orizzontale` a `RIGHT` per allinearlo a destra della casella
+ - Imposta `posizione_verticale` a `TOP` per allinearlo alla parte superiore della casella
+ - Imposta `posizione_verticale` a `CENTER` per allinearlo nel centro della casella di testo
+ - Imposta `posizione_verticale` a `BOTTOM` per allinearlo alla parte inferiore della casella
 
 ```python
 
@@ -35,9 +35,9 @@ text_size(dimensione)
 
 ```
 
-Che accetta un numero in pixel che rappresenta la dimensione del carattere desiderata.
+Che accetta un numero in pixel per impsotare la dimensione del carattere desiderata.
 
-Ad esempio, per creare la parola "Ciao", con testo rosso alto 16 pixel, centrato su una tela 400x400, dovresti utilizzare:
+Ad esempio, per creare la parola "Ciao", con testo rosso alto 16 pixel, centrato su una tela 400x400, dovresti scrivere:
 
 ```python
 
